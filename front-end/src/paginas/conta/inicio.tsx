@@ -65,7 +65,7 @@ export const InicioProvider = ({ children }: inicioProviderProps) => {
              // API PARA VERIFICAR SENHA E EMAIL
             if (conta) {
                  // ADICIONA API PARA PUXAR OS DADOS
-                await axios.post(`http://104.234.65.129:3000/checkLogin`, { params: { email: email, senha: senha } })
+                await axios.post(`http://localhost:3000/checkLogin`, { params: { email: email, senha: senha } })
                 .then((response) => {
                     setuserData({ conta: true, foto: foto, nome: response.data.nome, cargo: response.data.cargo })
                     setMessage("");
