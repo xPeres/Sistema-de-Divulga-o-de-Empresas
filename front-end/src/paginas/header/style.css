@@ -1,0 +1,207 @@
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    position: absolute;
+    width: 85%;
+    height: 12.5vh;
+    left: 7.5%;
+    top: 0vh;
+    border-bottom: solid .005vw #E2E2B6;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+      display: flex;
+      position: absolute;
+      width: 6vw;
+      height: 6vw;
+      left: 0vw;
+    }
+
+    .links {
+      display: flex;
+      position: absolute;
+      width: 20vw;
+      height: 100%;
+      left: 8vw;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1vw;
+      font-weight: bold;
+    }
+
+    .barraPesquisa {
+      display: flex;
+      position: absolute;
+      width: 27.5vw;
+      height: 100%;
+      left: 32.5vw; 
+      align-items: center;
+      justify-content: center;
+
+      input {
+        width: 80%;
+        height: 30%;
+        border-radius: .75vw;
+        border: none;
+        padding-left: 1vw;
+      }
+
+      input:focus,
+      input:focus-visible {
+        outline: none;
+      }
+    }
+
+    .contaUsuario {
+      display: flex;
+      position: absolute;
+      width: 15vw;
+      height: 6vw;
+      right: 0vw;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+      .usuarioFT {
+        display: flex;
+        position: absolute;
+        width: 3vw;
+        height: 3vw;
+        border-radius: 50%;
+        right: .5vw;
+      }
+
+      .infosUsuario {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        width: 53.5%;
+        height: 100%;
+        bottom: .5vw;
+        right: 3.8vw;
+        font-size: 1vw;
+        font-weight: bold;
+        align-items: center;
+        justify-content: end;
+
+        .nomeUsuario {
+          display: flex;
+          position: relative;
+          width: 100%;
+          height: 1.5vw;
+          top: 1.8vw;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis; 
+          justify-content: end;
+        }
+
+        .funcaoUsuario {
+          display: flex;
+          position: relative;
+          height: 1.5vw;
+          bottom: -.1vw;
+          font-size: .5vw;
+        }
+      }
+    }
+
+    .btnConta {
+      display: flex;
+      position: absolute;
+      width: 15vw;
+      height: 6vw;
+      right: 0vw;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+      .iconeConta {
+        display: flex;
+        position: absolute;
+        width: 3vw;
+        height: 3vw;
+        border-radius: 50%;
+        right: .5vw;
+      }
+
+      .infosUsuario {
+        display: flex;
+        position: absolute;
+        width: 53.5%;
+        height: 100%;
+        right: 2vw;
+        font-size: 1vw;
+        font-weight: bold;
+
+        .nomeUsuario {
+          display: flex;
+          position: absolute;
+          width: 100%;
+          height: 1.5vw;
+          top: 2vw;
+          overflow: hidden;
+        }
+
+        .funcaoUsuario {
+          display: flex;
+          position: absolute;
+          width: 100%;
+          height: 1.5vw;
+          top: 3.5vw;
+          font-size: .5vw;
+        }
+      }
+
+      .infosUsuario:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .anunciar {
+      display: flex;
+      position: absolute;
+      width: 8vw;
+      height: 6vw;
+      right: 12.5vw;
+      align-items: center;
+      justify-content: center;
+
+      .btn {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 25%;
+        background-color: green;
+        border-radius: 1vw;
+      }
+
+      .txt {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: .5vw;
+        align-items: center;
+        justify-content: center;
+        font-size: .6vw;
+        font-weight: bold;
+      }
+
+      .btn:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  .link-style {
+    text-decoration: none;
+    color: #FEFCFF;
+  }
+  
+  .active-link {
+    text-decoration: none;
+    color: #9831D8;
+  }
+}

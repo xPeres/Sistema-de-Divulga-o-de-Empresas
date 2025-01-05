@@ -1,0 +1,242 @@
+@media (min-width: 1024px) {
+  .pagina {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 43vw;
+    top: 12.7vh;
+    overflow-x: hidden;
+
+    .espacador {
+      display: flex;
+      position: absolute;
+      width: 85.8%;
+      height: 100%;
+      left: 7.5%;
+
+      .recomendados {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 25vw;
+        align-items: center;
+        justify-content: center;
+  
+        .trecomendado {
+          display: flex;
+          position: absolute;
+          left: .5vw;
+          top: .5vw;
+          font-size: 2vw;
+          font-weight: bold;
+        }
+  
+        .proximo {
+          display: flex;
+          position: absolute;
+          width: 3vw;
+          height: 20vw;
+          top: 4vw;
+          right: 0vw;
+          background-color: rgba(128,128,128,.4);
+          border-top-right-radius: .75vw;
+          border-bottom-right-radius: .75vw;
+        }
+  
+        .voltar {
+          display: flex;
+          position: absolute;
+          width: 3vw;
+          height: 20vw;
+          top: 4vw;
+          left: 0vw;
+          background-color: rgba(128,128,128,.4);
+          border-top-left-radius: .75vw;
+          border-bottom-left-radius: .75vw;
+        }
+  
+        .voltar:hover,
+        .proximo:hover {
+          transform: scale(1.05);
+        }
+  
+        .abas {
+          display: flex;
+          position: absolute;
+          width: 92%;
+          height: auto;
+          top: 4vw;
+          align-items: center;
+          justify-content: space-between;
+  
+          .cards {
+            display: flex;
+            position: relative;
+            width: 25.5vw;
+            height: 20vw;
+            background-color: #aeaeae;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            color: black;
+        
+            .fotoCard {
+              display: flex;
+              position: absolute;
+              width: 100%;
+              height: 70%;
+              top: 0vw;
+            }
+        
+            .textos {
+              display: flex;
+              position: absolute;
+              width: 18vw;
+              height: 5vw;
+              top: 14.5vw;
+              left: .5vw;
+              overflow: hidden;
+              align-items: center;
+        
+              .tituloCard {
+                display: flex;
+                position: absolute;
+                width: 19vw;
+                height: 2vw;
+                top: .5vw;
+                font-size: 1.5vw;
+                font-weight: bold;
+                overflow: hidden;
+              }
+          
+              .descCard {
+                display: flex;
+                position: absolute;
+                width: 19vw;
+                height: 2.5vw;
+                top: 2.5vw;
+                font-size: .75vw;
+                font-weight: normal;
+              }
+            }
+        
+            .avaliacao {
+              display: flex;
+              position: absolute;
+              width: 5vw;
+              height: 5vw;
+              left: 19.5vw;
+              top: 14.5vw;
+              align-items: center;
+              justify-content: end;
+
+              .ftEstrela {
+                display: flex;
+                position: relative;
+                width: 1.5vw;
+                height: 1.5vw;
+                top: -.75vw;
+              }
+        
+              .qtdAva {
+                display: flex;
+                position: relative;
+                width: auto;
+                height: 1.5vw;
+                top: -.75vw;
+                font-size: 1.3vw;
+                font-weight: bold;
+                justify-content: center;
+                align-items: center;
+                margin-left: .3vw;
+                font-family: cursive;
+              }
+        
+              .textAva {
+                display: flex;
+                position: absolute;
+                width: 7vw;
+                height: 1vw;
+                top: 2.5vw;
+                font-size: .75vw;
+                align-items: center;
+                justify-content: end;
+                overflow: hidden;
+              }
+            }
+        
+            .avaliacao:hover {
+              transform: scale(1.1);
+            }
+          }
+  
+          .cards:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+  
+      .textosPrincipal {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        top: 25vw;
+  
+        .abasTextos {
+          display: flex;
+          position: relative;
+          width: 100%;
+          height: 29vw;
+          margin-bottom: 1vw;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+  
+          .tituloTextos {
+            display: flex;
+            position: absolute;
+            left: .5vw;
+            top: .5vw;
+            font-size: 2vw;
+            font-weight: bold;
+          }
+  
+          .descTextos {
+            display: flex;
+            position: absolute;
+            width: 50%;
+            height: 20vw;
+            top: 3.5vw;
+            left: .5vw;
+            font-size: .9vw;
+          }
+  
+          .dois {
+            left: 42vw;
+          }
+  
+          .abaFotinhas {
+            display: flex;
+            position: absolute;
+            width: 50%;
+            height: 25vw;
+            right: .5vw;
+            align-items: center;
+            justify-content: center;
+  
+            .fotinhas {
+              width: 25vw;
+              height: 25vw;
+            }
+          }
+  
+          .tres {
+            right: 42vw;
+          }
+        }
+      }
+    }
+  }
+}
