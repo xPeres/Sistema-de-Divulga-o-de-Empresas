@@ -27,7 +27,6 @@ const Header = ({ onSearch, texto }: HeaderProps) => {
   useEffect(() => {
     if (texto) {
       setPesquisa(texto);
-      onSearch(texto);
     } else {
       setPesquisa('');
     }
@@ -45,7 +44,7 @@ const Header = ({ onSearch, texto }: HeaderProps) => {
         </div>
 
         <div className='barraPesquisa'>
-          <input type="text" value={pesquisa} onKeyDown={(e) => e.key === 'Enter' ? navigate('/pesquisar', { state: { pesquisa } }) : '' } onChange={(e) => { if (location.pathname === '/pesquisar') { onSearch(e.target.value) } setPesquisa(e.target.value)}} />
+          <input type="text" value={pesquisa} onClick={() => navigate('/pesquisar')} onKeyDown={(e) => e.key === 'Enter' ? navigate('/pesquisar', { state: { pesquisa } }) : '' } onChange={(e) => { if (location.pathname === '/pesquisar') { onSearch(e.target.value) } setPesquisa(e.target.value)}} />
         </div>
 
         {logado.conta ? 

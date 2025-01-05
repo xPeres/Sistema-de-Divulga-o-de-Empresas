@@ -10,7 +10,7 @@
         display: flex;
         position: relative;
         width: 50%;
-        height: 60%;
+        height: 25vw;
         left: 7.5%;
         align-items: center;
         justify-content: center;
@@ -54,7 +54,7 @@
         display: flex;
         position: relative;
         width: 32.5%;
-        height: 60%;
+        height: 25vw;
         left: 10%;
         align-items: center;
         justify-content: center;
@@ -102,7 +102,7 @@
                 height: 3vw;
                 right: 0vw;
                 top: 2.5vw;
-                font-size: 1vw;
+                font-size: .9vw;
                 font-weight: normal;
                 align-items: center;
                 justify-content: center;
@@ -309,7 +309,7 @@
                         height: 4.5vw;
                         top: 2.2vw;
                         left: 1vw;
-                        font-size: .6vw;
+                        font-size: 1vw;
                         overflow: hidden;
                     }
 
