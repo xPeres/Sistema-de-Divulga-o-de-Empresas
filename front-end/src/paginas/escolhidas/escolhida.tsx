@@ -46,7 +46,7 @@ const Escolhida = () => {
   useEffect(() => {
     const fetchLojas = async () => {
       try {
-        const response = await axios.post('http://localhost:3000/pegarEmpresa', { id: id });
+        const response = await axios.post('http://104.234.65.129:3000/pegarEmpresa', { id: id });
         const fetchedData = response.data.map((item: any) => ({
           id: item.id,
           nome: item.nome,
