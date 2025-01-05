@@ -26,7 +26,7 @@ const Recomendados: React.FC<RecomendadosProps> = ({ recomendar, setRecomendar, 
   useEffect(() => {
     const fetchRecomendados = async () => {
       try {
-        const response = await axios.post('https://104.234.65.129:3000/pegarEmpresas');
+        const response = await axios.post('https://104.234.5.129:3000/pegarEmpresas');
         const fetchedData = response.data.map((item: any) => ({
           id: item.id,
           loja: item.nome,
