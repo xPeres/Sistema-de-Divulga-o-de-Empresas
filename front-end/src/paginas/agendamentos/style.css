@@ -198,5 +198,12 @@
                 }
             }
         }
+
+        .data {
+            display: flex;
+            position: relative;
+            left: 10%;
+            width: 11vw;
+        }
     }
 }

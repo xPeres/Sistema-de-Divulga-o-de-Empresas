@@ -1,0 +1,63 @@
+@media (min-width: 1024px) {
+    .visuAgendamentos {
+        display: flex;
+        position: fixed;
+        width: 30vw;
+        height: max-content;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: #E2E2B6;
+        align-items: center;
+        justify-content: center;
+        border-radius: .5vw;
+        color: #000000;
+    
+        .abaage {
+            position: relative;
+            width: 80%;
+            top: 0vw;
+            border-collapse: collapse;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1vw;
+            margin-bottom: 1vw;
+        }
+    
+        .abaage th,
+        .abaage td {
+            border: 1px solid #FFFFFF;
+            padding: 8px;
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 14px;
+        }
+    
+        .abaage th {
+            background-color: #333;
+            font-weight: bold;
+        }
+    
+        .abaage td {
+            background-color: #1D1C1CAD;
+        }
+    
+        .fechar {
+            display: flex;
+            position: absolute;
+            top: .5vw;
+            right: .5vw;
+            width: 1vw;
+            height: 1vw;
+            background-image: url("../../assets/botao-fechar.png");
+            background-position: center;
+            background-size: 1vw;
+        }
+    
+        .fechar:hover {
+            background-image: url("../../assets/botao-fechar-vermelho.png");
+        }
+    }
+}

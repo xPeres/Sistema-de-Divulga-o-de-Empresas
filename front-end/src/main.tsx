@@ -4,11 +4,14 @@ import './index.css'
 import App from './App.tsx'
 
 import { InicioProvider } from './paginas/conta/inicio.tsx'
+import { VisualizarProvider } from './paginas/visualizar/visualizar.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <InicioProvider>
-      <App />
+      <VisualizarProvider>
+        <App />
+      </VisualizarProvider>
     </InicioProvider>
   </StrictMode>,
 )
