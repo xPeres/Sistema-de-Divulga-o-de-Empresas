@@ -54,7 +54,8 @@ login.criarUsuario = async function (req, res) {
         }
 
         const hashedPassword = await bcrypt.hash(valores['senha'], 10);
-        connection.promise().query('INSERT INTO usuarios(email,senha,nome,numero) VALUES(?, ?, ?, ?)', [valores['email'], hashedPassword, valores['nome'], valores['numero']]);
+        const hashedCPF = await bcrypt.hash(valores['cpf'], 10);
+        connection.promise().query('INSERT INTO usuarios(email,senha,nome,cpf,numero,cep,rua,numeroHouse) VALUES(?, ?, ?, ?, ?, ?, ?, ?)', [valores['email'], hashedPassword, valores['nome'], hashedCPF, valores['numero'], valores['cep'], valores['rua'],valores['numeroHouse']]);
         return res.status(200).send({ message: 'Usuário criado com sucesso' });
     } catch (err) {
         console.error(err);

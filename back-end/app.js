@@ -3,6 +3,7 @@ import cors from 'cors';
 
 import login from './APIs/login.js'
 import dados from './APIs/pegarDados.js'
+import agendamentos from './APIs/agendamentos.js'
 
 const app = express();
 
@@ -31,6 +32,18 @@ app.post('/pegarEmpresas', (req, res) => {
 
 app.post('/pegarEmpresa', (req, res) => {
     dados.pegarEmpresa(req, res)
+});
+
+app.post('/pegarAgendamentos', (req, res) => {
+    agendamentos.pegarAgendamentos(req, res)
+});
+
+app.post('/cancelarAgendamento', (req, res) => {
+    agendamentos.cancelarAgendamento(req, res)
+});
+
+app.post('/reagendarAgendamento', (req, res) => {
+    agendamentos.reagendarAgendamento(req, res)
 });
 
 app.listen(3000, () => {

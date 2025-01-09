@@ -6,8 +6,12 @@ CREATE TABLE IF NOT EXISTS `Usuarios` (
   `email` varchar(255) DEFAULT NULL,
   `senha` text DEFAULT NULL,
   `nome` varchar(255) DEFAULT NULL,
+  `cpf` varchar(255) DEFAULT NULL,
   `numero` varchar(25) DEFAULT NULL,
-  `cargo` varchar(255) DEFAULT 'usuario',
+  `cep` varchar(15) DEFAULT NULL,
+  `rua` varchar(255) DEFAULT NULL,
+  `numeroHouse` int(5) DEFAULT NULL,
+  `cargo` varchar(255) DEFAULT 'Usuario',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=1 COLLATE=utf8mb4_general_ci;
 
@@ -29,5 +33,17 @@ CREATE TABLE IF NOT EXISTS `Produtos` (
   `descP` text DEFAULT NULL,
   `valor` int(20) DEFAULT NULl,
   `lojaID` int(25) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=1 COLLATE=utf8mb4_general_ci;
+
+CREATE TABLE IF NOT EXISTS `Agendamentos` (
+  `id` int(25) NOT NULL AUTO_INCREMENT,
+  `loja` varchar(255) DEFAULT NULL,
+  `dia` text DEFAULT NULL,
+  `horario` text DEFAULT NULL,
+  `valor` int(20) DEFAULT NULl,
+  `aba` int(1) DEFAULT NULL,
+  `usuario` int(25) DEFAULT NULL,
+  `produtos` text DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=1 COLLATE=utf8mb4_general_ci;
