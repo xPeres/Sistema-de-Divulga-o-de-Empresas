@@ -1,0 +1,202 @@
+@media (min-width: 1024px) {
+    .paginaA {
+        display: flex;
+        position: absolute;
+        width: 85vw;
+        height: auto;
+        top: 15%;
+        background-color: #aeaeae;
+        left: 7.5vw;
+        border-radius: .75vw;
+        color: black;
+
+        .cardsAgendamento {
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+            width: 85vw;
+            height: auto;
+            align-items: center;
+            justify-content: space-between;
+
+            h1 {
+                display: flex;
+                position: relative;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                top: 0vw;
+            }
+
+            .subCardsAgendamento {
+                display: flex;
+                position: relative;
+                width: 47.5%;
+                height: 10vw;
+                bottom: 2vw;
+                margin-top: 1vw;
+                align-items: center;
+                justify-content: center;
+                border-bottom: solid 0.1vw white;
+
+                img {
+                    display: flex;
+                    position: absolute;
+                    width: 8vw;
+                    height: 8vw;
+                    left: .5vw;
+                    border-radius: 50%;
+                }
+
+                .titulo {
+                    display: flex;
+                    position: absolute;
+                    width: 75%;
+                    height: 3vw;
+                    left: 22%;
+                    top: 1.5vw;
+                    font-size: 2vw;
+                    overflow: hidden;
+                }
+
+                .horario {
+                    display: flex;
+                    position: absolute;
+                    width: 35%;
+                    height: 2vw;
+                    top: 4.5vw;
+                    left: 22%;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        position: absolute;
+                        width: 2vw;
+                        height: 2vw;
+                        left: 0vw;
+                    }
+
+                    .desc {
+                        display: flex;
+                        position: absolute;
+                        width: auto;
+                        height: auto;
+                        left: 2.5vw;
+                        font-size: 1vw;
+                        font-family: cursive;
+                    }
+                }
+
+                .valor {
+                    display: flex;
+                    position: absolute;
+                    width: 35%;
+                    height: 2vw;
+                    top: 4.5vw;
+                    left: 65%;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        position: absolute;
+                        width: 2vw;
+                        height: 2vw;
+                        left: 0vw;
+                    }
+
+                    .desc {
+                        display: flex;
+                        position: absolute;
+                        width: auto;
+                        height: auto;
+                        left: 2.5vw;
+                        font-size: 1vw;
+                        font-family: cursive;
+                    }
+                }
+
+                .info {
+                    display: flex;
+                    position: absolute;
+                    width: 40%;
+                    height: 2vw;
+                    top: 7.5vw;
+                    left: 22%;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        position: absolute;
+                        width: 2vw;
+                        height: 2vw;
+                        left: 0vw;
+                    }
+
+                    .desc {
+                        display: flex;
+                        position: absolute;
+                        width: auto;
+                        height: auto;
+                        left: 2.5vw;
+                        font-size: 1vw;
+                    }
+                }
+
+                .info:hover {
+                    transform: scale(1.1);
+                }
+
+                .cancelar {
+                    display: flex;
+                    position: absolute;
+                    width: 35%;
+                    height: 2vw;
+                    top: 7.5vw;
+                    left: 65%;
+                    align-items: center;
+                    justify-content: center;
+
+                    .img {
+                        position: absolute;
+                        width: 2vw;
+                        height: 2vw;
+                        left: 0vw;
+                        background-image: url("../../assets//cancelar.png");
+                        background-position: center;
+                        background-size: 2vw;
+                    }
+
+                    .img2 {
+                        position: absolute;
+                        width: 2vw;
+                        height: 2vw;
+                        left: 0vw;
+                        background-image: url("../../assets/reagendar.png");
+                        background-position: center;
+                        background-size: 2vw;
+                    }
+
+                    .desc {
+                        display: flex;
+                        position: absolute;
+                        width: auto;
+                        height: auto;
+                        left: 2.5vw;
+                        font-size: 1vw;
+                    }
+                }
+
+                .cancelar:hover {
+                    transform: scale(1.1);
+                    .img {
+                        background-image: url("../../assets/cancelar-vermelho.png");
+                    }
+
+                    .img2 {
+                        background-image: url("../../assets/reagendar-verde.png");
+                    }
+                }
+            }
+        }
+    }
+}

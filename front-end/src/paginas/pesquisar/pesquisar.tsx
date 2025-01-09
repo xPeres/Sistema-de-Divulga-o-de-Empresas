@@ -78,7 +78,7 @@ const Pesquisar = () => {
               </div>
 
               <div className='itens'>
-                {item.produtos.map((valor: any) => (
+                {item.produtos.slice(0,3).map((valor: any) => (
                   <>
                     <div className='produtos'>
                       <div className='titulo'>{valor.titulo}</div>

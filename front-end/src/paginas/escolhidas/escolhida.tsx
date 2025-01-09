@@ -45,7 +45,7 @@ const Escolhida = () => {
           nome: item.nome,
           loc: item.loc,
           desc: item.desc,
-          avaliacao: item.avaliacoes,
+          avaliacao: item.avaliacao,
           estrela: item.estrelas,
           logo: item.logo,
           numero: item.numero,

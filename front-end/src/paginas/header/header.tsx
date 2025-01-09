@@ -40,7 +40,9 @@ const Header = ({ onSearch, texto }: HeaderProps) => {
         <div className='links'>
           <Link to="/" className={location.pathname === '/' ? 'active-link' : 'link-style'}>Inicio</Link>
           <Link to="/pesquisar" className={location.pathname === '/pesquisar' ? 'active-link' : 'link-style'}>Serviços</Link>
-          <Link to="/agendamentos" className={location.pathname === '/agendamentos' ? 'active-link' : 'link-style'}>Agendamentos</Link>
+          {logado.conta ? <Link to={"/agendamentos/"+logado.id} className={location.pathname === '/agendamentos' ? 'active-link' : 'link-style'}>Agendamentos</Link> :
+            <Link to="/" onClick={() => showInicio('Mostrar')} className={location.pathname === '/agendamentos' ? 'active-link' : 'link-style'}>Agendamentos</Link>
+          }
         </div>
 
         <div className='barraPesquisa'>
